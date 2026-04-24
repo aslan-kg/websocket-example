@@ -8,7 +8,7 @@
   <body>
     <h1>My Websocket Page</h1>
     <script>
-      const ws = new WebSocket("ws://localhost:8802");
+      const ws = new WebSocket(`wss:${//location.host}`);
       ws.addEventListener("open", () => {
         console.log("We are connected!");
       });
